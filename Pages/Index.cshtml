@@ -1,12 +1,67 @@
-﻿@page
+﻿Selvfølgelig! Jeg skal oppdatere nettsiden med informasjon om bedriften Brønnøy Kjøtt og Betong, inkludert kontorstedet og informasjon om deres tjenester.
+
+```html
+@page
 @model IndexModel
-@{    
-    ViewData["Title"] = "Home page";
+@{
+    ViewData["Title"] = "Hjem";
 }
 
-<div class="text-center">
-    <h1 class="display-4">VELKOMMEN TIL BRØNNØY KJØTT OG BETONG MAFIATJENESTER</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    <hr />
-    <div>Host operating system: @Model.OSVersion</div>
-</div>
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - Brønnøy Kjøtt og Betong</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 56px;
+        }
+        .jumbotron {
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">Brønnøy Kjøtt og Betong</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Hjem <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#tjenester">Tjenester</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#om-oss">Om oss</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#kontakt">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="jumbotron text-center">
+        <h1 class="display-4">Velkommen til Brønnøy Kjøtt og Betong!</h1>
+        <p class="lead">Vi tilbyr førsteklasses tjenester innen kjøttproduksjon og betongarbeid i Brønnøysund.</p>
+    </header>
+
+    <div class="container">
+        <section id="tjenester" class="mt-5">
+            <h2>Tjenester</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Kjøttproduksjon</h3>
+                    <p>Vi leverer høykvalitets kjøttprodukter til både privatkunder og bedrifter.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Betongarbeid</h3>
+                    <p>Vårt team av eksperter tilbyr et bredt spekter av betongtjenester, inkludert fundamenter, gulv, og konstruksjoner.</p>
+                </div>
+                <div class="col
